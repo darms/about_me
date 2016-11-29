@@ -5,7 +5,7 @@
  // or .toLowerCase() used to validate the user input and accommodate users entering all-caps
  // Y/N or YES/NO answers, too.
 
-var question1 = prompt('Is Darcy allergic to cats?').toLowerCase();
+var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 
 // if (condition is ture)  {
 // do something;
@@ -16,9 +16,9 @@ var question1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 
 
 
-if (question1 === 'yes' || question1 === 'y') {
+if (response1 === 'yes' || response1 === 'y') {
   alert('Correct!');
-}else if (question1 === 'no' || question1 === 'n'){
+}else if (response1 === 'no' || response1 === 'n'){
   alert('Sorry to inform you, but Darcy is most definitely allergic.')
 }else{
   alert('You fail to understand yes/no quesions so that is as good as a hill of beans during a tornado. YOU LOSE!')
