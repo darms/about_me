@@ -51,3 +51,13 @@ if (response4 === 'no' || resonse4 === "n") {
 }else{
   alert('It\'s either a yes or a no. Nothing has changed here.')
 }
+
+var response5 = prompt('Is she weird?').toLowerCase();
+
+if(response5 === 'yes' || response5 = 'y') {
+  alert('Is she white? Is she promised to the night?');
+}else if(response5 === 'no' || response5 === 'n'){
+  alert('Have you ever even met her?! Also, sorry that you are not a Pixies fan.')
+}else{
+  alert('Really? It might be time to make an appointment with your eye doctor.')
+}
