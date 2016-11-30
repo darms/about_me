@@ -4,7 +4,7 @@
  // and user input must accept either y/n or yes/no responses, with either .toUpperCase()
  // or .toLowerCase() used to validate the user input and accommodate users entering all-caps
  // Y/N or YES/NO answers, too.
-
+'use strict';
 var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 
 // if (condition is ture)  {
@@ -17,9 +17,9 @@ var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 if (response1 === 'yes' || response1 === 'y') {
   alert('Correct!');
 }else if (response1 === 'no' || response1 === 'n'){
-  alert('Sorry to inform you, but Darcy is most definitely allergic.')
+  alert('Sorry to inform you, but Darcy is most definitely allergic.');
 }else{
-  alert('You fail to understand yes/no quesions so that is as good as a hill of beans during a tornado. YOU LOSE!')
+  alert('You fail to understand yes/no quesions so that is as good as a hill of beans during a tornado. YOU LOSE!');
 }
 
 var response2 = prompt('Is Darcy a millenial?').toLowerCase();
@@ -27,9 +27,9 @@ var response2 = prompt('Is Darcy a millenial?').toLowerCase();
 if (response2 === 'yes' || response2 === 'y') {
   alert('Correct!');
 }else if (response2 === 'no' || response2 === 'n'){
-  alert('Sorry she\'s not a baby boomer.')
+  alert('Sorry she\'s not a baby boomer.');
 }else{
-  alert('Try answering with either a Yes or No.')
+  alert('Try answering with either a Yes or No.');
 }
 
 var response3 = prompt('Was she born in the land of Microsoft?').toLowerCase();
@@ -37,27 +37,28 @@ var response3 = prompt('Was she born in the land of Microsoft?').toLowerCase();
 if (response3 === 'yes' || response3 === 'y') {
   alert('Alright!');
 }else if (response3 === 'no' || response3 === 'n'){
-  alert('Sorry, please try again.')
+  alert('Sorry, please try again.');
 }else{
-  alert('Try answering with either a Yes or No.')
+  alert('Try answering with either a Yes or No.');
 }
 
 var response4 = prompt('Can Darcy eat wheat?').toLowerCase();
 
-if (response4 === 'no' || resonse4 === "n") {
-  alert('Correct-a-mundo!');
+if (response4 === 'no' || response4 === "n") {
+  alert('Correct o mundo!');
 }else if (response4 === 'yes' || response4 === 'y'){
-  alert('Are you out of your mind? Why not give her some broken glass to eat while you\'re at it?!')
+  alert('Are you out of your mind? Why not give her some broken glass to eat while you\'re at it?!');
 }else{
-  alert('It\'s either a yes or a no. Nothing has changed here.')
+  alert('It\'s either a yes or a no. Nothing has changed here.');
 }
+
 
 var response5 = prompt('Is she weird?').toLowerCase();
 
-if(response5 === 'yes' || response5 = 'y') {
+if (response5 === 'yes' || response5 === "y") {
   alert('Is she white? Is she promised to the night?');
-}else if(response5 === 'no' || response5 === 'n'){
-  alert('Have you ever even met her?! Also, sorry that you are not a Pixies fan.')
+}else if (response5 === 'no' || response5 === 'n'){
+  alert('Have you met her?');
 }else{
-  alert('Really? It might be time to make an appointment with your eye doctor.')
+  alert('You might want to consider making an eye appointment with youor doctor.');
 }
