@@ -1,8 +1,18 @@
-*{
-  text-align: center;
-    list-style: none;
-}
+
 
 img{
   border-radius: 90px;
+}
+
+h1. h2{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h1:hover ,h2:hover{
+  color: #b258e2;
+}
+
+ li{
+  font-family: 'slabo 27px', serif;
+  font-size: 16px;
 }
