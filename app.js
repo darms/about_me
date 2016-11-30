@@ -24,9 +24,19 @@ if (response1 === 'yes' || response1 === 'y') {
 
 var response2 = prompt('Is Darcy a millenial?').toLowerCase();
 
-if (response1 === 'yes' || response1 === 'y') {
+if (response2 === 'yes' || response2 === 'y') {
   alert('Correct!');
-}else if (response1 === 'no' || response1 === 'n'){
+}else if (response2 === 'no' || response2 === 'n'){
+  alert('Sorry she\'s not a baby boomer.')
+}else{
+  alert('Try answering with either a Yes or No.')
+}
+
+var response3 = prompt('Is Darcy a millenial?').toLowerCase();
+
+if (response3 === 'yes' || response3 === 'y') {
+  alert('Correct!');
+}else if (response3 === 'no' || response3 === 'n'){
   alert('Sorry she\'s not a baby boomer.')
 }else{
   alert('Try answering with either a Yes or No.')
