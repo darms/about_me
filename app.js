@@ -41,3 +41,13 @@ if (response3 === 'yes' || response3 === 'y') {
 }else{
   alert('Try answering with either a Yes or No.')
 }
+
+var response4 = prompt('Can Darcy eat wheat?').toLowerCase();
+
+if (response4 === 'no' || resonse4 === "n") {
+  alert('Correct-a-mundo!');
+}else if (response4 === 'yes' || response4 === 'y'){
+  alert('Are you out of your mind? Why not give her some broken glass to eat while you\'re at it?!')
+}else{
+  alert('It\'s either a yes or a no. Nothing has changed here.')
+}
