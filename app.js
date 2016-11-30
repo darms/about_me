@@ -32,12 +32,12 @@ if (response2 === 'yes' || response2 === 'y') {
   alert('Try answering with either a Yes or No.')
 }
 
-var response3 = prompt('Is Darcy a millenial?').toLowerCase();
+var response3 = prompt('Was she born in the land of Microsoft?').toLowerCase();
 
 if (response3 === 'yes' || response3 === 'y') {
-  alert('Correct!');
+  alert('Alright!');
 }else if (response3 === 'no' || response3 === 'n'){
-  alert('Sorry she\'s not a baby boomer.')
+  alert('Sorry, please try again.')
 }else{
   alert('Try answering with either a Yes or No.')
 }
