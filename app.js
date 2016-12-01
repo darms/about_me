@@ -68,7 +68,7 @@ if (response5 === 'yes' || response5 === "y") {
 }else if (response5 === 'no' || response5 === 'n'){
   alert('Have you met her?');
 }else{
-  alert('You might want to consider making an eye appointment with youor doctor.');
+  alert('You might want to consider making an eye appointment with your doctor.');
 }
 
 var guess = 0;
@@ -78,3 +78,12 @@ var guess = prompt('How many letters are in my middle name?');
   console.log('Bwahaha');
 
 for (i = 4; i > 5; i--);
+
+if(guess >5){
+  alert('Too high!')
+}else if{
+  (guess < 1)
+}alert('too low!');
+else if{
+  guess === 0;
+}(alert = 'PERFECT!!');
