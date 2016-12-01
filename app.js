@@ -5,7 +5,8 @@
  // or .toLowerCase() used to validate the user input and accommodate users entering all-caps
  // Y/N or YES/NO answers, too.
 'use strict';
-var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
+
+alert('All questions are yes or no. Please respond either with Yes/Y or No/N')
 
 // if (condition is ture)  {
 // do something;
@@ -14,7 +15,9 @@ var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 // and maybe yet another thing
 //
 
-alert("All questions are yes or no. Please respond either with Yes/Y or No/N")
+
+
+var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 
 if (response1 === 'yes' || response1 === 'y') {
   alert('Correct!');
@@ -23,13 +26,13 @@ if (response1 === 'yes' || response1 === 'y') {
 }else{
   alert('You fail to understand yes/no quesions so that is as good as a hill of beans during a tornado. YOU LOSE!');
 }
-console.log("Response1 = Yes, she is allergic to cats.");
+console.log('Response1 = Yes, she is allergic to cats.');
 
 var response2 = prompt('Is Darcy a millenial?').toLowerCase();
 
 if (response2 === 'yes' || response2 === 'y') {
   alert('Correct!');
-  console.log("Oh boy!");
+  console.log('Oh boy!');
 }else if (response2 === 'no' || response2 === 'n'){
   alert('Sorry she\'s not a baby boomer.');
 }else{
@@ -50,7 +53,7 @@ if (response3 === 'yes' || response3 === 'y') {
 
 var response4 = prompt('Can Darcy eat wheat?').toLowerCase();
 
-if (response4 === 'no' || response4 === "n") {
+if (response4 === 'no' || response4 === 'n') {
   alert('Correct o mundo!');
   console.log('Let\'s get the party started!');
 }else if (response4 === 'yes' || response4 === 'y'){
@@ -62,7 +65,7 @@ if (response4 === 'no' || response4 === "n") {
 
 var response5 = prompt('Is she weird?').toLowerCase();
 
-if (response5 === 'yes' || response5 === "y") {
+if (response5 === 'yes' || response5 === 'y') {
   alert('Is she white? Is she promised to the night?');
   console.log('Pixies = life!');
 }else if (response5 === 'no' || response5 === 'n'){
@@ -71,19 +74,23 @@ if (response5 === 'yes' || response5 === "y") {
   alert('You might want to consider making an eye appointment with your doctor.');
 }
 
-var guess = 0;
-while(guess != 0){
-var guess = prompt('How many letters are in my middle name?');
-  }
-  console.log('Bwahaha');
 
-for (i = 4; i > 5; i--);
+//incomplete logic and code for question 6
+
+while(guess != 0){
+  var guess = prompt('How many letters are in my middle name?');
+}
+console.log('Bwahaha');
+
+  //for (i = 4; i > 5; i--);
 
 if(guess >5){
   alert('Too high!')
-}else if{
-  (guess < 1)
-}alert('too low!');
-else if{
-  guess === 0;
-}(alert = 'PERFECT!!');
+}else if(guess < 1){
+  alert('too low!');
+}else if(guess === 0){
+  alert('PERFECT!!');
+}
+  //Logic for question 7 will go below
+
+var response7 = prompt('What are my favorite foods?');
