@@ -70,3 +70,11 @@ if (response5 === 'yes' || response5 === "y") {
 }else{
   alert('You might want to consider making an eye appointment with youor doctor.');
 }
+
+var guess = 0;
+while(guess != 0){
+var guess = prompt('How many letters are in my middle name?');
+  }
+  console.log('Bwahaha');
+
+for (i = 4; i > 5; i--);
