@@ -98,44 +98,71 @@ var answerTally = 0;
 function answer6() {
   var hats = 3;
 
-  for(var i=0; i<4; i++){
-    var response6 = parseInt(prompt('How many hats do I own?'));
-    if (response6 === hats) {
-    alert('Contragulations! You have guessed correctly!');
-    console.log('Way to get ths party started!');
-    answerTally += 1;
-  } else if (response6 > hats) {
-    alert('Too high!');
-  } else if (response6 < hats) {
-    alert('Too low!');
-  } else {
-    alert('Stop playing around. Enter in a number');
-    break;
-  }
-}
-  console.log('Keep warm this winter!');
-}
-
-  answer6();
+//   for (var i = 0; i < 4; i++){
+//     var response6 = parseInt(prompt('How many hats do I own?'));
+//     if (response6 === hats) {
+//     alert('Contragulations! You have guessed correctly!');
+//     console.log('Way to get ths party started!');
+//     answerTally += 1;
+//   } else if (response6 > hats) {
+//     alert('Too high!');
+//   } else if (response6 < hats) {
+//     alert('Too low!');
+//   } else {
+//     alert('Stop playing around. Enter in a number');
+//     break;
+//   }
+// }
+//   console.log('Keep warm this winter!');
+// }
+//
+//   answer6();
 
   //for (i = 4; i > 5; i--);
 
-  // function question7() {
-  // var favMovies = ['The Crow', 'Pulp Fiction' , 'Kill Bill' , 'Inglorious Basterds', 'Amadeus', 'Fiddler on the Roof' , 'Blade Runner' , 'Whale Rider' , 'Tracks' , 'Interview with the Vampire'];
+  function question7 () {
+  var tries = 0;
+  var favMovies = ['The Crow', 'Pulp Fiction' , 'Kill Bill' , 'Inglorious Basterds', 'Amadeus', 'Fiddler on the Roof' ,'Blade Runner' , 'Whale Rider' , 'Tracks' , 'Interview with the Vampire'];
+  var favMoviesCorrect = false;
+  var favMoviesAnswer;
 
+  while (tries < 6 && favMoviesCorrect === false) {
+    var favMoviesGuess = prompt('Can you guess any of my favorite movies?').toLowerCase();
 
-  function totalRight() {
-    if(answerTally >= 7){
-      alert('Hot Diggity!' + userName + 'got ' + answerTally + ' out of 7 correct! You are the 1%! Buy Darcy a drink, why don\'t \'cha?!');
-    }else if(answerTally >=5){
-      alert('Not bad, ' + userName +'. You scored' + answerTally+ ' out of 7. Better luck next time!');
-    }else{
-      alert('Really?!' + username +', you only scored ' + answerTally + 'out of 7? Have you ever even met Darcy?!');
+    for (var i = 0; i < favMovies.length; i++) {
+    if (favMoviesguess === favMovies[i]) {
+      alert('Amazing! You are correct. My favorite movies are ' + favMovies);
+      answerTally +=1;
+      tries = 6;
+      favMoviesCorrect = true;
+      favMoviesGuess[i];
     }
-    console.log('This is the end. Da dee dum...')
+  }else if (favMoviesGuess !== favMoviesAnswer) {
+      alert('Sorry! Here's a hint- she's a Tarantino fan.');
+      tries += 1;
+    }else if (tries > 5 && favMoviesCorrect === false) {
+      alert('Sorry! You either have horrible taste in movies that you were projecting on me or you are not familiar with any Tarantino films. Here are my favorite Movies ' + favMovies);
+      }
+    }
+
+
   }
 
-  totalRight()
+  question7()
+
+
+  // function totalRight() {
+  //   if(answerTally >= 7){
+  //     alert('Hot Diggity!' + userName + 'got ' + answerTally + ' out of 7 correct! You are the 1%! Buy Darcy a drink, why don\'t \'cha?!');
+  //   }else if(answerTally >=5){
+  //     alert('Not bad, ' + userName +'. You scored' + answerTally+ ' out of 7. Better luck next time!');
+  //   }else{
+  //     alert('Really?!' + username +', you only scored ' + answerTally + 'out of 7? Have you ever even met Darcy?!');
+  //   }
+  //   console.log('This is the end. Da dee dum...')
+  // }
+  //
+  // totalRight()
   //
   //
   // }
