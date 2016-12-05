@@ -8,6 +8,8 @@
   var userName = prompt('Hello there! What\'s your name?');
   //
 alert('Hello there '+ userName + ', welcome to the random guessing game. The first 5 questions are yes or no. Please respond either with Yes/Y or No/N. After that the 6th question asks for a number and the last question is about movies. Good luck!');
+
+var correctTally = 0;
 //
 // // if (condition is ture)  {
 // // do something;
@@ -90,34 +92,47 @@ alert('Hello there '+ userName + ', welcome to the random guessing game. The fir
 // answer5();
 //
 
-function answer6() {
-  var hats = 3;
-
-for(var i=0; i<4; i++){
-  var response6 = parseInt(prompt('How many hats do I own?'));
-  if (response6 === hats) {
-    alert('Contragulations! You have guessed correctly!');
-    console.log('Way to get ths party started!');
-    counter += 1;
-  } else if (response6 > hats) {
-    alert('Too high!');
-  } else if (response6 < hats) {
-    alert('Too low!');
-  } else {
-    alert('Stop playing around. Enter in a number');
-    break;
-  }
-}
-  console.log('Keep warm this winter!');
-}
-
-answer6();
+// function answer6() {
+//   var hats = 3;
+//
+// for(var i=0; i<4; i++){
+//   var response6 = parseInt(prompt('How many hats do I own?'));
+//   if (response6 === hats) {
+//     alert('Contragulations! You have guessed correctly!');
+//     console.log('Way to get ths party started!');
+//       correctTally += 1;
+//   } else if (response6 > hats) {
+//     alert('Too high!');
+//   } else if (response6 < hats) {
+//     alert('Too low!');
+//   } else {
+//     alert('Stop playing around. Enter in a number');
+//     break;
+//   }
+// }
+//   console.log('Keep warm this winter!');
+// }
+//
+//   answer6();
 
   //for (i = 4; i > 5; i--);
 
-  // function question7 () {
-  // var favMovies = ['The Crow', 'Pulp Fiction' , 'Kill Bill' , 'Inglorious Basterds', 'Amadeus', 'Fiddler on the Roof' ,
-  // , 'Blade Runner' , 'Whale Rider' , 'Tracks' , 'Interview with the Vampire'];
+  // function question7() {
+  // var favMovies = ['The Crow', 'Pulp Fiction' , 'Kill Bill' , 'Inglorious Basterds', 'Amadeus', 'Fiddler on the Roof' , 'Blade Runner' , 'Whale Rider' , 'Tracks' , 'Interview with the Vampire'];
+
+
+  function totalRight() {
+    if(correctTally >= 7){
+      alert('Hot Diggity!' + userName + 'got ' + correctTally + ' out of 7 correct! You are the 1%! Buy Darcy a drink, why don\'t \'cha?!');
+    }else if(correctTally >=5){
+      alert('Not bad, ' + userName +'. You scored' + correctTally+ ' out of 7. Better luck next time!');
+    }else{
+      alert('Really?!' + username +', you only scored ' + correctTally + 'out of 7? Have you ever even met Darcy?!');
+    }
+    console.log('This is the end. Da dee dum...')
+  }
+
+  totalRight()
   //
   //
   // }
