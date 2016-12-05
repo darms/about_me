@@ -4,17 +4,17 @@
 //  // and user input must accept either y/n or yes/no responses, with either .toUpperCase()
 //  // or .toLowerCase() used to validate the user input and accommodate users entering all-caps
 //  // Y/N or YES/NO answers, too.
-'use strict';
-//
-// alert('All questions are yes or no. Please respond either with Yes/Y or No/N');
+// 'use strict';
+  var userName = prompt('Hello there! What\'s your name?');
+  //
+alert('Hello there '+ userName + ', welcome to the random guessing game. The first 5 questions are yes or no. Please respond either with Yes/Y or No/N. After that the 6th question asks for a number and the last question is about movies. Good luck!');
 //
 // // if (condition is ture)  {
 // // do something;
 // //}else{
 // //do this other thing;
 // // and maybe yet another thing
-// //
-//
+// ////
 //
 // function answer1 (){
 //   var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
@@ -88,26 +88,30 @@
 //   }
 // }
 // answer5();
+//
 
-// function answer6(){
-//incomplete logic and code for question 6
-  // for(var i = 0; i < 4; i++){
-  // var counter = 0;
-//   var response6 = 0;
-//   while ( response6 !== 7 && counter < 4){
-//     var response6 = parseInt(prompt('How many dwarves are there in Snow White?'));
-//     if(response6 === 7){
-//       alert('PERFECT!!')
-//         }else if (guess > 7){
-//       alert('Too high!')
-//     }else if (guess < 7)
-//   alert('Too low!')
-// }else{
-//   alert('Hot Damn! You are out of chances!');
-// }
-// }
+function answer6() {
+  var hats = 3;
 
-// answer6();
+for(var i=0; i<4; i++){
+  var response6 = parseInt(prompt('How many hats do I own?'));
+  if (response6 === hats) {
+    alert('Contragulations! You have guessed correctly!');
+    console.log('Way to get ths party started!');
+    counter += 1;
+  } else if (response6 > hats) {
+    alert('Too high!');
+  } else if (response6 < hats) {
+    alert('Too low!');
+  } else {
+    alert('Stop playing around. Enter in a number');
+    break;
+  }
+}
+  console.log('Keep warm this winter!');
+}
+
+answer6();
 
   //for (i = 4; i > 5; i--);
 
@@ -118,4 +122,4 @@
   //
   // }
   //
-  // question7();
+  // question7()
