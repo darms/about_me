@@ -9,15 +9,15 @@
   //
 alert('Hello there '+ userName + ', welcome to the random guessing game. The first 5 questions are yes or no. Please respond either with Yes/Y or No/N. After that the 6th question asks for a number and the last question is about movies. Good luck!');
 
-var correctTally = 0;
-//
-// // if (condition is ture)  {
-// // do something;
-// //}else{
-// //do this other thing;
-// // and maybe yet another thing
-// ////
-//
+var answerTally = 0;
+// //
+// // // if (condition is ture)  {
+// // // do something;
+// // //}else{
+// // //do this other thing;
+// // // and maybe yet another thing
+// // ////
+// //
 // function answer1 (){
 //   var response1 = prompt('Is Darcy allergic to cats?').toLowerCase();
 //
@@ -31,7 +31,7 @@ var correctTally = 0;
 //   console.log('Response1 = Yes, she is allergic to cats.');
 // }
 // answer1();
-//
+// //
 // function answer2 (){
 //   var response2 = prompt('Is Darcy a millenial?').toLowerCase();
 //
@@ -46,12 +46,13 @@ var correctTally = 0;
 //   }
 // }
 // answer2();
-//
+// //
 // function answer3() {
 //   var response3 = prompt('Was she born in the land of Microsoft?').toLowerCase();
 //
 //   if (response3 === 'yes' || response3 === 'y') {
 //     alert('Alright!');
+//         answerTally +=1;
 //     console.log('We have a live one here!');
 //   }
 //   else if (response3 === 'no' || response3 === 'n'){
@@ -62,12 +63,13 @@ var correctTally = 0;
 //   }
 // }
 // answer3();
-//
+// //
 // function answer4() {
 //   var response4 = prompt('Can Darcy eat wheat?').toLowerCase();
 //
 //   if (response4 === 'no' || response4 === 'n') {
 //     alert('Correct o mundo!');
+//         answerTally += 1;
 //     console.log('Let\'s get the party started!');
 //   }else if (response4 === 'yes' || response4 === 'y'){
 //     alert('Are you out of your mind? Why not give her some broken glass to eat while you\'re at it?!');
@@ -83,6 +85,7 @@ var correctTally = 0;
 //   if (response5 === 'yes' || response5 === 'y') {
 //     alert('Is she white? Is she promised to the night?');
 //     console.log('Pixies = life!');
+//       answerTally += 1;
 //   }else if (response5 === 'no' || response5 === 'n'){
 //     alert('Have you met her?');
 //   }else{
@@ -92,28 +95,28 @@ var correctTally = 0;
 // answer5();
 //
 
-// function answer6() {
-//   var hats = 3;
-//
-// for(var i=0; i<4; i++){
-//   var response6 = parseInt(prompt('How many hats do I own?'));
-//   if (response6 === hats) {
-//     alert('Contragulations! You have guessed correctly!');
-//     console.log('Way to get ths party started!');
-//       correctTally += 1;
-//   } else if (response6 > hats) {
-//     alert('Too high!');
-//   } else if (response6 < hats) {
-//     alert('Too low!');
-//   } else {
-//     alert('Stop playing around. Enter in a number');
-//     break;
-//   }
-// }
-//   console.log('Keep warm this winter!');
-// }
-//
-//   answer6();
+function answer6() {
+  var hats = 3;
+
+  for(var i=0; i<4; i++){
+    var response6 = parseInt(prompt('How many hats do I own?'));
+    if (response6 === hats) {
+    alert('Contragulations! You have guessed correctly!');
+    console.log('Way to get ths party started!');
+    answerTally += 1;
+  } else if (response6 > hats) {
+    alert('Too high!');
+  } else if (response6 < hats) {
+    alert('Too low!');
+  } else {
+    alert('Stop playing around. Enter in a number');
+    break;
+  }
+}
+  console.log('Keep warm this winter!');
+}
+
+  answer6();
 
   //for (i = 4; i > 5; i--);
 
@@ -122,12 +125,12 @@ var correctTally = 0;
 
 
   function totalRight() {
-    if(correctTally >= 7){
-      alert('Hot Diggity!' + userName + 'got ' + correctTally + ' out of 7 correct! You are the 1%! Buy Darcy a drink, why don\'t \'cha?!');
-    }else if(correctTally >=5){
-      alert('Not bad, ' + userName +'. You scored' + correctTally+ ' out of 7. Better luck next time!');
+    if(answerTally >= 7){
+      alert('Hot Diggity!' + userName + 'got ' + answerTally + ' out of 7 correct! You are the 1%! Buy Darcy a drink, why don\'t \'cha?!');
+    }else if(answerTally >=5){
+      alert('Not bad, ' + userName +'. You scored' + answerTally+ ' out of 7. Better luck next time!');
     }else{
-      alert('Really?!' + username +', you only scored ' + correctTally + 'out of 7? Have you ever even met Darcy?!');
+      alert('Really?!' + username +', you only scored ' + answerTally + 'out of 7? Have you ever even met Darcy?!');
     }
     console.log('This is the end. Da dee dum...')
   }
