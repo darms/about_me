@@ -89,24 +89,33 @@
 // }
 // answer5();
 
-function answer6(){
+// function answer6(){
 //incomplete logic and code for question 6
-  for(var i = 0; i < 4; i++){
-    var guess = prompt('How many letters are in my middle name?');
-    if(guess === 0){
-      alert('PERFECT!!');
-      break;
-    }
-    if(guess > 0){
-      alert('Too high!');
-    }
-  }
+  // for(var i = 0; i < 4; i++){
+  // var counter = 0;
+//   var response6 = 0;
+//   while ( response6 !== 7 && counter < 4){
+//     var response6 = parseInt(prompt('How many dwarves are there in Snow White?'));
+//     if(response6 === 7){
+//       alert('PERFECT!!')
+//         }else if (guess > 7){
+//       alert('Too high!')
+//     }else if (guess < 7)
+//   alert('Too low!')
+// }else{
+//   alert('Hot Damn! You are out of chances!');
+// }
+// }
 
-}
-answer6();
+// answer6();
 
   //for (i = 4; i > 5; i--);
 
-  //Logic for question 7 will go below
-
-// var response7 = prompt('What are my favorite foods?');
+  // function question7 () {
+  // var favMovies = ['The Crow', 'Pulp Fiction' , 'Kill Bill' , 'Inglorious Basterds', 'Amadeus', 'Fiddler on the Roof' ,
+  // , 'Blade Runner' , 'Whale Rider' , 'Tracks' , 'Interview with the Vampire'];
+  //
+  //
+  // }
+  //
+  // question7();
