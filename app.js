@@ -1,7 +1,6 @@
-
 // 'use strict';
 //   var userName = prompt('Hello there! What\'s your name?');
-//   //
+//
 //   alert('Hello there '+ userName + ', welcome to the random guessing game. The first 5 questions are yes or no. Please respond either with Yes/Y or No/N. After that the 6th question asks for a number and the last question is about movies. Good luck!');
 //
 //   var answerTally = 0;
@@ -19,10 +18,10 @@
 //     console.log('Response1 = Yes, she is allergic to cats.');
 //   }
 //   answer1();
-// //
+//
 //   function answer2 (){
 //     var response2 = prompt('Is Darcy a millenial?').toLowerCase();
-// //
+//
 //     if (response2 === 'yes' || response2 === 'y') {
 //       alert('Correct!');
 //       console.log('Oh boy!');
@@ -34,7 +33,7 @@
 //     }
 //   }
 //   answer2();
-// //
+//
 //   function answer3() {
 //     var response3 = prompt('Was she born in the land of Microsoft?').toLowerCase();
 //
@@ -51,7 +50,7 @@
 //   }
 // }
 // answer3();
-// //
+//
 // function answer4() {
 //   var response4 = prompt('Can Darcy eat wheat?').toLowerCase();
 //
@@ -66,7 +65,7 @@
 //   }
 // }
 //   answer4();
-// //
+//
 //   function answer5(){
 //     var response5 = prompt('Is she weird?').toLowerCase();
 //
@@ -81,65 +80,60 @@
 //     }
 //   }
 //   answer5();
-//
-
-// function answer6() {
-//   var hats = 3;
-//
-//   for (var i = 0; i < 4; i++) {
-//     var response6 = parseInt(prompt('How many hats do I own?'));
-//     if (response6 < hats) {
-//       alert('Too low! Please try again.');
-//     } else if (response6 > hats) {
-//       alert('Too high!');
-//     } else if (hats === response6){
-//       alert('Contragulations! You are correct.');
-//     }else if (!isNaN (hats)) {
-//       alert('Stop playing around! Please enter in a number.');
-//     } else{
-//       alert('Better luck next time!');
-//     }
-//       // answerTally +=1;
-//
-//     }
-//   }
-//
-//
-// answer6();
 
 
+function answer6() {
+  var hats = 3;
 
-  // function question7 () {
+  for (var i = 0; i < 4; i++) {
+    var response6 = parseInt(prompt('How many hats do I own?'));
+    if (response6 < hats) {
+      alert('Too low! Please try again.');
+    } else if (response6 > hats) {
+      alert('Too high!');
+    }else if (isNaN (hats)) {
+      alert('Stop playing around! Please enter in a number.');
+    } else{
+      alert('Contragulations! You are correct.');
+      break;
+    }
+  }
+}
+answer6();
 
-  var tries = 0;
-  var favMovies = [' The Crow, ', ' Pulp Fiction,' , ' Kill Bill, ' , ' Inglorious Basterds, ', ' Amadeus, ', ' Fiddler on the Roof, ' ,'Blade Runner, ' , 'Whale Rider, ' , 'Tracks, &' , 'Interview with the Vampire'];
-  var favMoviesCorrect = false;
-  var favMoviesAnswer;
+ function question7(){
+  var favFruit = ['cantaloupe', 'watermelon' , 'strawberry' , 'mango'];
+  var counter = 0;
+  var favFruitGuess = false;
+  var favFruitAnswer;
 
-  // while (tries < 5 & favMoviesCorrect === false){
+  while (counter < 6 && favFruitGuess === false) {
 
-  // while (tries < 6 && favMoviesCorrect === false) {
+    var guess = prompt('Can you name any of my favorite fruits?').toLowerCase();
 
-var guess = prompt('Can you guess any of my favorite movies?').toLowerCase();
-    for (var i = 0; i < 5; i++) {
-
-    if (guess === favMovies[i]) {
-      alert('Amazing! You are correct. My favorite movies are ' + favMovies);
-      answerTally +=1;
-      tries = 5;
-      favMoviesCorrect = true;
-      favMoviesGuess[i];
-          console.log('Alrighty Flighty!');
-    } else  if (guess !== favMovies[i]) {
-      alert('Sorry! Here\'s a hint- she\'s a Tarantino fan.');
-      tries += 1;
-    } else {
-      alert('Sorry! You either have horrible taste in movies or you are not familiar with any Tarantino films.');
+    for (var i = 0; i < favFruit.length; i++) {
+      if (guess === favFruit[i]) {
+        alert('You are right! I like to eat ' + favFruit);
+        counter += 1;
+        counter = 6;
+        favFruitGuess = true;
+        favFruitAnswer = favFruit[i];
       }
     }
-// }(tries > 5 && favMoviesCorrect === false
-  //
-  // question7();
+    if (guess !== favFruitAnswer) {
+      alert('Sorry, that is not correct!');
+      counter += 1;
+    }
+    if (counter > 5 && favFruitGuess === false) {
+      alert('Sorry, you ran out of guesses. My favorite foods are ' + favFruit);
+    }
+  }
+}
+question7();
+
+
+
+
   //
   //
   // function totalRight() {
