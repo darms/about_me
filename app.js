@@ -83,62 +83,63 @@
 //   answer5();
 //
 
-function answer6() {
-  var hats = 3;
+// function answer6() {
+//   var hats = 3;
+//
+//   for (var i = 0; i < 4; i++) {
+//     var response6 = parseInt(prompt('How many hats do I own?'));
+//     if (response6 < hats) {
+//       alert('Too low! Please try again.');
+//     } else if (response6 > hats) {
+//       alert('Too high!');
+//     } else if (hats === response6){
+//       alert('Contragulations! You are correct.');
+//     }else if (!isNaN (hats)) {
+//       alert('Stop playing around! Please enter in a number.');
+//     } else{
+//       alert('Better luck next time!');
+//     }
+//       // answerTally +=1;
+//
+//     }
+//   }
+//
+//
+// answer6();
 
-  for (var i = 0; i < 4; i++) {
-    var response6 = parseInt(prompt('How many hats do I own?'));
-    if (response6 < hats) {
-      alert('Too low! Please try again.');
-    } else if (response6 > hats) {
-      alert('Too high!');
-    } else if (hats === response6){
-      alert('Contragulations! You are correct.');
-    }else if (!isNaN (hats)) {
-      alert('Stop playing around! Please enter in a number.');
-    } else{
-      alert('Better luck next time!');
-    }
-      // counter +=1;
-      console.log('Keep warm this winter!');
-
-    }
-  }
 
 
-answer6();
-
-  // for (i = 4; i > 5; i--);
-  //
   // function question7 () {
-  // var tries = 0;
-  // var favMovies = ['The Crow', 'Pulp Fiction' , 'Kill Bill' , 'Inglorious Basterds', 'Amadeus', 'Fiddler on the Roof' ,'Blade Runner' , 'Whale Rider' , 'Tracks' , 'Interview with the Vampire'];
-  // var favMoviesCorrect = false;
-  // var favMoviesAnswer;
-  //
-  // while (tries < 6 && favMoviesCorrect === false) {
-  //   var favMoviesGuess = prompt('Can you guess any of my favorite movies?').toLowerCase();
-  //
-  //   for (var i = 0; i < favMovies.length; i++) {
-  //   if (favMoviesguess === favMovies[i]) {
-  //     alert('Amazing! You are correct. My favorite movies are ' + favMovies);
-  //     answerTally +=1;
-  //     tries = 6;
-  //     favMoviesCorrect = true;
-  //     favMoviesGuess[i];
-  //   }
-  // }else if (favMoviesGuess !== favMoviesAnswer) {
-  //     alert('Sorry! Here's a hint- she's a Tarantino fan.');
-  //     tries += 1;
-  //   }else if (tries > 5 && favMoviesCorrect === false) {
-  //     alert('Sorry! You either have horrible taste in movies that you were projecting on me or you are not familiar with any Tarantino films. Here are my favorite Movies ' + favMovies);
-  //     }
-  //   }
-  //
-  //
-  // }
 
-  // question7()
+  var tries = 0;
+  var favMovies = [' The Crow, ', ' Pulp Fiction,' , ' Kill Bill, ' , ' Inglorious Basterds, ', ' Amadeus, ', ' Fiddler on the Roof, ' ,'Blade Runner, ' , 'Whale Rider, ' , 'Tracks, &' , 'Interview with the Vampire'];
+  var favMoviesCorrect = false;
+  var favMoviesAnswer;
+
+  // while (tries < 5 & favMoviesCorrect === false){
+
+  // while (tries < 6 && favMoviesCorrect === false) {
+
+var guess = prompt('Can you guess any of my favorite movies?').toLowerCase();
+    for (var i = 0; i < 5; i++) {
+
+    if (guess === favMovies[i]) {
+      alert('Amazing! You are correct. My favorite movies are ' + favMovies);
+      answerTally +=1;
+      tries = 5;
+      favMoviesCorrect = true;
+      favMoviesGuess[i];
+          console.log('Alrighty Flighty!');
+    } else  if (guess !== favMovies[i]) {
+      alert('Sorry! Here\'s a hint- she\'s a Tarantino fan.');
+      tries += 1;
+    } else {
+      alert('Sorry! You either have horrible taste in movies or you are not familiar with any Tarantino films.');
+      }
+    }
+// }(tries > 5 && favMoviesCorrect === false
+  //
+  // question7();
   //
   //
   // function totalRight() {
