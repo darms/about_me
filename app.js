@@ -1,7 +1,7 @@
 'use strict';
   var userName = prompt('Hello there! What\'s your name?');
 
-  alert('Hello there '+ userName + ', welcome to the random guessing game. The first 5 questions are yes or no. Please respond either with Yes/Y or No/N. After that the 6th question asks for a number and the last question is about movies. Good luck!');
+  alert('Hello there '+ userName + ', welcome to the random guessing game. The first 5 questions are yes or no. Please respond either with Yes/Y or No/N. After that the 6th question asks for a number and the last question is about fruit. Good luck!');
 
   var answerTally = 0;
 
@@ -16,7 +16,7 @@
     }else{
       alert('You fail to understand yes/no quesions so that is as good as a hill of beans during a tornado. YOU LOSE!');
     }
-    console.log('Response1 = Yes, she is allergic to cats.');
+
   }
   answer1();
 
@@ -26,7 +26,7 @@
     if (response2 === 'yes' || response2 === 'y') {
       alert('Correct!');
       answerTally += 1;
-      console.log('Oh boy!');
+
 
     }else if (response2 === 'no' || response2 === 'n'){
       alert('Sorry she\'s not a baby boomer.');
@@ -42,7 +42,6 @@
     if (response3 === 'yes' || response3 === 'y') {
       alert('Alright!');
       answerTally +=1;
-      console.log('We have a live one here!');
     }
     else if (response3 === 'no' || response3 === 'n'){
     alert('Sorry, please try again.');
@@ -59,7 +58,6 @@ function answer4() {
   if (response4 === 'no' || response4 === 'n') {
     alert('Correct o mundo!');
         answerTally += 1;
-    console.log('Let\'s get the party started!');
   }else if (response4 === 'yes' || response4 === 'y'){
     alert('Are you out of your mind? Why not give her some broken glass to eat while you\'re at it?!');
   }else{
@@ -73,7 +71,6 @@ function answer4() {
 
     if (response5 === 'yes' || response5 === 'y') {
       alert('Is she white? Is she promised to the night?');
-      console.log('Pixies = life!');
       answerTally += 1;
     }else if (response5 === 'no' || response5 === 'n'){
       alert('Have you met her?');
@@ -105,7 +102,7 @@ function answer6() {
 answer6();
 
  function question7(){
-  var favFruit = ['cantaloupe', 'watermelon' , 'strawberry' , 'mango'];
+  var favFruit = ['cantaloupe', 'watermelon' , 'strawberries' , 'mangos' , 'lychees', 'tomatoes' , 'apples', 'grapes', 'raspberries', 'grapefruit'];
   var counter = 0;
   var favFruitGuess = false;
   var favFruitAnswer;
@@ -143,9 +140,7 @@ question7();
     }else{
       alert('Really?! ' + username +', you only scored ' + answerTally + ' out of 7? Have you ever even met Darcy?!');
     }
-    console.log('This is the end. Da dee dum...')
+
   }
 
   totalRight();
-
-  //

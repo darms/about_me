@@ -5,14 +5,17 @@ img{
 }
 
 h1. h2{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Neuton', serif;
 }
 
 h1:hover ,h2:hover{
   color: #b258e2;
 }
+body{
+  background-color: #e3e5d7;
+}
 
  li{
-  font-family: 'slabo 27px', serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 16px;
 }
